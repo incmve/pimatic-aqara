@@ -225,7 +225,7 @@ module.exports = (env) ->
 
   class AqaraDoorSensor extends env.devices.Sensor
   
-    template: 'xiaomi-contact'
+    template: 'contact'
 
     constructor: (@config, lastState, @board, @baseConfig) ->
       @id = @config.id
