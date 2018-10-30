@@ -224,6 +224,8 @@ module.exports = (env) ->
     getLux: -> Promise.resolve @_lux
 
   class AqaraDoorSensor extends env.devices.Sensor
+  
+    template: 'xiaomi-contact'
 
     constructor: (@config, lastState, @board, @baseConfig) ->
       @id = @config.id
